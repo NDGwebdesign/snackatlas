@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnackAtlas | Explore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="index.html">SnackAtlas</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu openen">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a data-nav="home" href="index.html">Home</a></li>
+        <li><a data-nav="explore" href="explore.html">Explore</a></li>
+        <li><a data-nav="random" href="random.html">Random Snack</a></li>
+        <li><a data-nav="about" href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <div class="section-head">
+      <h1>Explore snacks per regio</h1>
+      <p class="subtle">Filter op continent of land en ontdek nieuwe smaken.</p>
+    </div>
+
+    <section class="filter-bar card">
+      <label>
+        Continent
+        <select id="continentFilter"></select>
+      </label>
+      <label>
+        Land
+        <select id="countryFilter"></select>
+      </label>
+      <button id="resetFilters" class="btn btn-ghost" type="button">Reset filters</button>
+    </section>
+
+    <section class="map-section card">
+      <h2>Klikbare wereldkaart</h2>
+      <p>Klik op een land om direct te filteren.</p>
+      <div class="mini-map" id="miniMap">
+        <img
+          class="map-image"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
+          alt="Wereldkaart"
+          loading="lazy"
+        >
+        <button class="map-pin" data-country="Japan" style="top: 36%; left: 81%;">Japan</button>
+        <button class="map-pin" data-country="Mexico" style="top: 45%; left: 18%;">Mexico</button>
+        <button class="map-pin" data-country="India" style="top: 43%; left: 61%;">India</button>
+        <button class="map-pin" data-country="Italy" style="top: 33%; left: 52%;">Italie</button>
+        <button class="map-pin" data-country="South Korea" style="top: 35%; left: 75%;">Zuid-Korea</button>
+        <button class="map-pin" data-country="South Africa" style="top: 72%; left: 54%;">Zuid-Afrika</button>
+        <button class="map-pin" data-country="Turkey" style="top: 34%; left: 57%;">Turkije</button>
+        <button class="map-pin" data-country="Thailand" style="top: 49%; left: 69%;">Thailand</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="exploreSnackGrid" class="snack-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>SnackAtlas - Vind snacks op kaart, continent en land.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/explore.js"></script>
+</body>
+</html>

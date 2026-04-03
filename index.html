@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnackAtlas | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="index.html">SnackAtlas</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Menu openen">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a data-nav="home" href="index.html">Home</a></li>
+        <li><a data-nav="explore" href="explore.html">Explore</a></li>
+        <li><a data-nav="random" href="random.html">Random Snack</a></li>
+        <li><a data-nav="about" href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Proef de wereld, hap voor hap</p>
+        <h1>Discover Snacks From Around the World</h1>
+        <p>
+          Ontdek iconische snacks uit verschillende landen. Van knapperig tot zoet,
+          SnackAtlas helpt je nieuwe favorieten te vinden.
+        </p>
+        <div class="hero-actions">
+          <a href="explore.html" class="btn btn-primary">Start met ontdekken</a>
+          <a href="random.html" class="btn btn-ghost">Verras me met een snack</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <h2>Populaire snacks</h2>
+        <a class="inline-link" href="explore.html">Bekijk alles</a>
+      </div>
+      <div id="homeSnackGrid" class="snack-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>SnackAtlas - Wereldse snacks in het Nederlands.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
